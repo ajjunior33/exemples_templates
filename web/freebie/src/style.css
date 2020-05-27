@@ -1,0 +1,53 @@
+section.apresentation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:15px;
+    padding:10px;
+}
+section.list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:15px 0px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: -5px 10px 30px rgba(0, 0, 0, .2);
+
+}
+section.list article{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+section.list article .descriptionList{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+section.features{
+    margin-top:60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:15px;
+    align-items: center;
+}
+section article .list_features{
+    margin-top:25px;
+}
+section article .list_features li{
+    list-style: none;
+    margin:5px 0px;
+    color:var(--dark);
+}
+
+section.Plain{
+    padding: 25px 0px;
+    margin:20px 0px;
+}
+section.Plain > .titlePlain{
+    text-align: center;
+}  

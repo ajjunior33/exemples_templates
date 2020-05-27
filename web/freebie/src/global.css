@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark:#4F5665;
+    --white:#f1f1f1;
+    --red:#F53838;
+    --dark02:#0B132A;
+}
+body{
+    background-color: white;
+    color:black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+}
+button, input, textarea{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+}
+.App{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    border: none;
+    padding: 10px 45px;
+    margin:5px 8px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition:all .6s;
+}
+.btn-default{
+    color:var(--dark02);
+    font-weight: bold;
+    background-color:transparent;
+}
+
+.btn-danger{ 
+    color:var(--red);
+    background-color:transparent;
+    font-weight: bold;
+    border:1px solid var(--red);
+}
+.btn-danger:hover{ 
+    color:var(--white);
+    background-color:var(--red);
+}
+.btn-danger-out{
+    background-color: var(--red);
+    color:var(--white);
+    border-radius: 10px;
+    padding: 15px 55px;
+    box-shadow: -5px 10px 30px var(--red);
+}
+.btn-danger-out:active{
+    background-color:var(--dark02);
+
+}
+.btn-danger-out:hover{
+    filter:brightness(80%);
+}
+
+/*Text*/
+.display-1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.display-3{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/*Text Color*/
+
+.text-gray{
+    color:var(--dark);
+}
