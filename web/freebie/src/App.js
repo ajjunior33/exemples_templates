@@ -12,8 +12,15 @@ import image01 from './assets/icons/user.svg';
 import image02 from './assets/icons/location.svg';
 import image03 from './assets/icons/Server.svg';
 
+import free from './assets/icons/Illustration/Free.svg';
+import premium from './assets/icons/Illustration/Premium.svg';
+import standard from './assets/icons/Illustration/Standard.svg';
+
+import map from './assets/icons/Huge Global.png';
+import clients from './assets/icons/Sponsored.png';
+
 /*Icons */
-import {FaCheckCircle} from 'react-icons/fa'
+import {FaCheckCircle, FaCheck} from 'react-icons/fa'
 
 
 function App() {
@@ -82,7 +89,70 @@ function App() {
           <p className="text-gray">Let's choose the package that is best for you and explore it happily and <br/> cheerfully.</p>
         </div>
 
+        <section className="listPlain">
+          <article>          
+            <img src={free} className="App-logo" alt="logo" />
+            <b className="display-5">Free Plan</b>
+            <ul className="list_plain">
+              <li><FaCheck size={13} color="#2fab73"/> Unlimited Bandwitch</li>
+              <li><FaCheck size={13} color="#2fab73"/> Encrypted Connection</li>
+              <li><FaCheck size={13} color="#2fab73"/> No Traffic Logs</li>
+              <li><FaCheck size={13} color="#2fab73"/> Works on All Devices</li>
+            </ul>
+            
+            <h3> Free</h3>
+            <button className="btn btn-danger">Select</button>
+          </article>
+          <article>          
+            <img src={standard} className="App-logo" alt="logo" />
+            <b className="display-5">Standard Plan</b>
+            <ul className="list_plain">
+              <li><FaCheck size={13} color="#2fab73"/> Unlimited Bandwitch</li>
+              <li><FaCheck size={13} color="#2fab73"/> Encrypted Connection</li>
+              <li><FaCheck size={13} color="#2fab73"/> Yes Traffic Logs</li>
+              <li><FaCheck size={13} color="#2fab73"/> Works on All Devices</li>
+              <li><FaCheck size={13} color="#2fab73"/> Connect Anyware</li>
+            </ul>
+            
+            <footer><h3 className="display-5">$9 <sup>/mo</sup></h3></footer>
+            <button className="btn btn-danger">Select</button>
+          </article>
+          <article>          
+            <img src={premium} className="App-logo" alt="logo" />
+            <b className="display-5">Premium Plan</b>
+            <ul className="list_plain">
+              <li><FaCheck size={13} color="#2fab73"/> Unlimited Bandwitch</li>
+              <li><FaCheck size={13} color="#2fab73"/> Encrypted Connection</li>
+              <li><FaCheck size={13} color="#2fab73"/> Yes Traffic Logs</li>
+              <li><FaCheck size={13} color="#2fab73"/> Works on All Devices</li>
+              <li><FaCheck size={13} color="#2fab73"/> Connect Anyware</li>
+              <li><FaCheck size={13} color="#2fab73"/> Get New Features</li>
+            </ul>
+            
+            <footer><h3 className="display-5">$12 <sup>/mo</sup></h3></footer>
+            <button className="btn btn-danger-in">Select</button>
+          </article>
+        </section>
       </section>
+      <sectcion className="mapa">
+        <article style={{textAlign:'center'}}>
+          <h1 className="display-3">Huge Global Network <br /> of Fast VPN</h1> <br/>
+          <p>See <b>LaslesVPN</b> everywhere to make it easier for you when you move locations.</p>
+        </article>
+        <article>
+          <img src={map} className="App-logo" alt="logo" />
+        </article>
+        <article>
+          <img src={clients} className="App-logo" alt="logo" />
+        </article>
+      </sectcion>
+      <section className="repost">
+        <article style={{textAlign:'center'}}>  
+          <h1 className="display-3">Trusted bt Thousands of <br/> Happy Customer</h1>
+          <p>These are the stories of our customers who have joined us with great <br /> pleasure when using this crazy feature</p>
+        </article>
+      </section>
+       
     </div>
   );
 }

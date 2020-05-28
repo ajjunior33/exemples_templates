@@ -44,11 +44,24 @@ button, input, textarea{
     color:var(--red);
     background-color:transparent;
     font-weight: bold;
-    border:1px solid var(--red);
+    border:2px solid var(--red);
 }
 .btn-danger:hover{ 
     color:var(--white);
     background-color:var(--red);
+}
+.btn-danger-in{
+    background-color:var(--red);
+    font-weight: bold;
+    color:var(--white);
+    border:2px solid var(--red);
+}
+.btn-danger-in:active{
+    background-color:var(--dark02);
+    border-color:var(--dark02);
+}
+.btn-danger-in:hover{
+    filter:brightness(80%);
 }
 .btn-danger-out{
     background-color: var(--red);
@@ -59,7 +72,6 @@ button, input, textarea{
 }
 .btn-danger-out:active{
     background-color:var(--dark02);
-
 }
 .btn-danger-out:hover{
     filter:brightness(80%);
@@ -72,6 +84,10 @@ button, input, textarea{
 }
 .display-3{
     font-size: 35px;
+    font-weight: 500;
+}
+.display-5{
+    font-size: 25px;
     font-weight: 500;
 }
 
